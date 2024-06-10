@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+/* --------------------------------------------------navbar---------------------------------------------------- */
+.navbar {
+    background-color: rgb(235, 230, 230);
+
+
+}
+
+.navbar .container .maindiv {
+
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 2px 0px;
+
+}
+
+.navbar .container .maindiv .right_column {
+
+    text-align: center;
+    align-self: center;
+
+
+}
+
+.navbar .container .maindiv .right_column li {
+    display: inline-block;
+    padding-right: 30px;
+    list-style-type: none;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.navbar .container .maindiv .right_column a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(14, 13, 13);
+}
+
+.navbar .container .maindiv .left_column img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+
+/* -----------------------------------------------------banner --------------------------------------------------------------*/
+
+
+
+.banner .bg_img {
+
+    background-image: url(image/Untitled-1.png);
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    height: 80vh;
+}
+
+.banner .bg_img::after {
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(8, 8, 8, 0.432);
+    z-index: 1;
+
+}
+
+.banner .bg_img .text {
+
+    text-align: center;
+    padding: 30vh
+}
+
+.banner .bg_img .text h1 {
+
+    font-family: "Oswald", sans-serif;
+    font-size: 34px;
+    line-height: 46px;
+    letter-spacing: 5px;
+    color: #EBE6E6;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 10px;
+
+}
+
+.banner .bg_img .text p {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    color: #EBE6E6;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 20px;
+
+}
+
+.banner .bg_img .text a {
+
+    color: rgb(46, 46, 46);
+    background-color: rgb(235, 230, 230);
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 30px;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 9;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+
+/* ----------------------------------------------------services-------------------------------------------- */
+
+.services .container .main_div {
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.services .container .main_div img {
+
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+.services .container .text {
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(92, 92, 70);
+    margin: 30px 0px;
+}
+
+
+
+.services .container .main_div .div1 {
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(180, 158, 158);
+}
+
+.services .container .main_div .div1 h3 {
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+
+}
+
+.services .container .main_div .div1 p {
+
+    font-family: "open sans", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+
+}
+
+.services .container .main_div .div1 #price {
+
+    font-family: "open sans", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    background-color: rgb(66, 51, 51);
+    color: azure;
+    border-radius: 30px;
+    margin: 10px 40px;
+    padding: 5px 10px;
+}
+
+/* ---------------------------------------------------------gallery------------------------------------------------------ */
+.gallery {
+
+    padding: 50px 0px;
+}
+
+.gallery .container .main_div {
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+}
+
+.gallery .container .headline {
+
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-size: 24px;
+
+
+}
+
+.gallery .container .headline hr {
+    border: 2px solid rgb(102, 90, 75);
+    width: 15%;
+    margin-left: 480px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.gallery .container .main_div img {
+
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+/* --------------------------------------------------------------review--------------------------------------------- */
+.review_section .container .main_div {
+
+
+    padding: 20px;
+}
+
+.review_section .container .headline {
+
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+    font-size: medium;
+    text-shadow: -8px 4px 5px rgba(0, 0, 0, 0.44);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+    text-decoration-color: rgb(92, 92, 70);
+
+
+}
+
+.review_section .container .main_div .parent img {
+
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review_section .container .main_div {
+
+
+    margin-bottom: 50px;
+}
+
+.review_section .container .main_div .parent {
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 50vw;
+
+
+}
+
+.review_section .container .main_div .parent .child h4,
+h6 {
+
+    color: rgb(149, 202, 255);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+
+.review_section .container .main_div .parent .child b {
+
+    color: rgb(14, 12, 10);
+    text-transform: capitalize;
+}
+
+.review_section .container .main_div .parent #review_text {
+
+    margin-top: 20px;
+}
+
+.review_section .container .main_div .parent #review_text .text {
+
+
+    margin-top: 20px;
+}
+
+.review_section {
+
+
+    padding: 30px 0px;
+}
+
+.review_section .container .main_div {
+
+    /* -webkit-box-shadow: -8px -7px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px -7px 5px 0px rgba(0,0,0,0.75); */
+    box-shadow: -8px -7px 5px 0px rgba(0, 0, 0, 0.75);
+    background: rgb(0, 34, 36);
+    background: linear-gradient(90deg, rgba(0, 34, 36, 1) 0%, rgba(37, 48, 114, 0.6755077030812324) 23%, rgba(39, 2, 142, 0.5634628851540616) 100%);
+}
+
+/* ------------------------------------------------contact page------------------------------------------------------ */
+
+
+
+.contact_us .banner .bg_img {
+
+    background-image: url(image/Untitled-1.png);
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+    height: 30vh;
+}
+
+.contact_us .banner .bg_img::after {
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(8, 8, 8, 0.432);
+    z-index: 1;
+
+}
+
+.contact_us .banner .text {
+
+    padding-top: 10px;
+    margin: 0;
+}
+
+.contact_us .banner .text h1 {
+
+    padding-top: 25px;
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+
+}
+
+.contact_us .banner .text p {
+    font-family: "open sans", sans-serif;
+    font-size: 18px;
+
+}
+
+.contact_Section .container .mian_div {
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 80px;
+}
+
+.contact_Section .container .mian_div .left-column {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.contact_Section .container .mian_div .left-column h5 {
+    font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgb(191, 191, 191);
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+
+.contact_Section .container .mian_div .left-column hr {
+
+    border: 2px solid goldenrod;
+    border-radius: 30px;
+    width: 15%;
+    margin-top: 10px;
+
+}
+
+.contact_Section .container .mian_div .right_column img {
+    width: 100%;
+}
+
+.contact_Section .container .mian_div .left-column h1 {
+    font-family: 'Playfair Display', Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    color: #1f1f1f !important;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+/* ----------------------------------------------form----------------------------------- */
+
+.contact_Section{
+padding-bottom: 100px;
+
+}
+.contact_Section .container .mian_div .left-column .name_email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+
+}
+
+.contact_Section .container .mian_div .left-column .phone_subject {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+}
+
+.contact_Section .container .mian_div .left-column textarea {
+
+    width: 100%;
+    height: 15vh;
+    resize: none;
+
+}
+
+.contact_Section .container .mian_div .left-column input {
+    height: 6vh;
+    margin-bottom: 15px;
+    border: 2px solid #C6C6C6;
+}
+
+.contact_Section .container .mian_div .left-column input,
+textarea[placeholder] {
+
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+.contact_Section .container .mian_div .left-column textarea[placeholder] {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact_Section .container .mian_div .left-column textarea {
+
+    border: 2px solid #C6C6C6;
+}
+
+.contact_Section .container .mian_div .left-column #submit {
+
+    background-color: #C39D63;
+    border: 2px solid #C39D63;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+
+/* ----------------------------------------------------form end----------------------------------- */
+
+.contact_Section .container .mian_div .right_column .box {
+
+    background-color: #EBE6E6;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.contact_Section .container .mian_div .right_column .box #contact {
+
+    font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: rgb(191, 191, 191);
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+
+.contact_Section .container .mian_div .right_column .box #address {
+    font-weight: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 31px;
+    margin-bottom: 5px;
+
+
+}
+
+
+
+.contact_Section .container .mian_div .right_column .box #state,
+#number {
+
+    font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(85, 84, 84);
+
+}
+.contact_Section .container .mian_div .right_column .box img{
+
+    border-radius: 20px;
+}
